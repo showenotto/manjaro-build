@@ -14,6 +14,6 @@
   become: true
   become_user: "{{target_user}}"
   become_method: su
-  shell: git add . && git commit -m '1.0' && git push --set-upstream origin
+  shell: git add . && git commit -m '1.0' && git push && whoami
   args:
     chdir: "{{target_home_dir}}/manjaro-build/"
