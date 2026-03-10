@@ -9,6 +9,7 @@
     name: user.name
     value: "Showen"
     scope: global
+
 - name:
   shell: "git add . && git commit -m '1.0' && git push"
   args:
