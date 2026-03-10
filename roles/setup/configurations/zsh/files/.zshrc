@@ -37,8 +37,20 @@ setopt HIST_IGNORE_ALL_DUPS # Don't store duplicate commands
 setopt share_history
 #$History configs
 
+bindkey '^[OH' beginning-of-line
+bindkey '^[OF' end-of-line
+
+# Insert / Delete
+bindkey '^[[2~' overwrite-mode
+bindkey '^[[3~' delete-char
+
+# Page up / down (optional)
+bindkey '^[[5~' up-line-or-history
+bindkey '^[[6~' down-line-or-history
+
 #^Functions
 source '/home/showen/manjaro-build/roles/setup/configurations/zsh/files/functions/stop-ports.sh'
 #$Functions
 cat /etc/motd
+
 [[ "$TMUX" = "" ]] && tmux
