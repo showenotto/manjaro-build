@@ -1,0 +1,17 @@
+---
+- name: "Setting up Manjaro..."
+  hosts: localhost
+  roles:
+    #Initializations
+    - roles/setup/initialize/packages
+    #Configurations
+    - roles/setup/configurations/kde-desktop
+    - roles/setup/configurations/motd
+    - roles/setup/configurations/tmux
+    - roles/setup/configurations/vim
+    - roles/setup/configurations/zsh
+    #Applications
+    - roles/setup/applications/install-deb
+    - roles/setup/applications/install-flatpaks
+    - roles/setup/applications/zed
+    - roles/setup/applications/wireshark

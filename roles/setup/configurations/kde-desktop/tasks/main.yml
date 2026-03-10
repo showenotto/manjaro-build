@@ -1,0 +1,9 @@
+---
+- name: Configuring kde-desktop...
+  shell: |
+    ~/.local/bin/konsave -r kde-desktop
+    ~/.local/bin/konsave -i "{{ target_home_dir }}/manjaro-build/roles/setup/configurations/kde-desktop/files/kde-desktop.knsv"
+    ~/.local/bin/konsave -a kde-desktop
+  become: true
+  become_user: "{{target_user}}"
+  become_method: su
