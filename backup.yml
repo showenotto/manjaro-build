@@ -7,8 +7,9 @@
     - roles/backup/configurations/tmux
     - roles/backup/configurations/zsh
     - roles/backup/configurations/vim
+    - roles/backup/configurations/timeshift
     #Applications
     - roles/backup/applications/zed
     - roles/backup/applications/wireshark
     #Manjaro Build
-    #- roles/backup/manjaro-build
+    - roles/backup/manjaro-build

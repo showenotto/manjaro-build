@@ -13,12 +13,3 @@
   shell: |
     /usr/bin/pipx uninstall konsave
     /usr/bin/pipx install konsave
-
-- name: Installing 'Inter' font...
-  become: yes
-  become_user: "root"
-  become_method: su
-  shell: |
-    mkdir /usr/local/share/fonts/inter/
-    cp "{{target_home_dir}}/manjaro-build/roles/setup/initialize/packages/files/Inter-VariableFont_opsz,wght.ttf" /usr/local/share/fonts/inter/
-    fc-cache -f -v
