@@ -11,6 +11,6 @@
     scope: global
 
 - name:
-  shell: "git add . && git commit -m '1.0' && git push"
+  shell: git add . && git commit -m '1.0' && git push
   args:
     chdir: "{{target_home_dir}}/manjaro-build/"
