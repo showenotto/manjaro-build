@@ -9,9 +9,7 @@ PACKAGES:
     "xclip",
     "gparted",
     "btop",
-    "gnome-clocks",
     "kalk",
-    "imagemagick",
     "python-pipx",
     "flatpak",
   ]
