@@ -20,8 +20,7 @@
   "snapshot_count" : "685737",
   "date_format" : "%Y-%m-%d %H:%M:%S",
   "exclude" : [
-    "/home/showen/**",
-    "/root/**"
+    "/home/showen/**"
   ],
   "exclude-apps" : []
 }
